@@ -1,0 +1,20 @@
+{
+  "name": "typescript-jest-jenkins",
+  "version": "1.0.0",
+  "description": "sample app to demo javascript CICD",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "author": "Lokesh Cherukuri",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.4",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.3"
+  }
+}
