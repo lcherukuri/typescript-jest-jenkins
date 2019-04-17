@@ -1,4 +1,6 @@
-const person: Function = (): Object => ({
+import { IPerson } from './types';
+
+const person: Function = (): IPerson => ({
     name: 'Lokesh',
     job: 'Software Engineer'
 });

@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --coverage",
-    "lint": "tslint -c tslint.json -p tsconfig.json"
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "clean": "rm -rf coverage types",
+    "clean-full": "rm -r coverage types node_modules package-lock.json"
   },
   "author": "Lokesh Cherukuri",
   "license": "ISC",
