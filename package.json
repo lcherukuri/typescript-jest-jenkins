@@ -1,16 +1,16 @@
 {
-  "name": "typescript-jest-jenkins",
-  "version": "1.0.0",
+  "name": "@lcherukuri/typescript-jest-jenkins",
+  "version": "0.0.1",
   "description": "sample app to demo javascript CICD",
   "main": "src/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run clean && tsc",
     "test": "jest --coverage",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "clean": "rm -rf coverage types",
-    "clean-full": "rm -r coverage types node_modules package-lock.json"
+    "clean-full": "rm -rf coverage types node_modules package-lock.json"
   },
   "author": "Lokesh Cherukuri",
   "license": "ISC",
